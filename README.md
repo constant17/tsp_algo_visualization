@@ -1,20 +1,14 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e21365cc-96a9-4649-9ad2-a35bb42d4a9f/deploy-status)](https://app.netlify.com/sites/tspvis/deploys)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://tspvis.com)
-[![Contributors](https://img.shields.io/github/contributors/jhackshaw/tspvis)](https://github.com/jhackshaw/tspvis/graphs/contributors)
-![GitHub](https://img.shields.io/github/license/jhackshaw/tspvis)
-
 # Traveling Salesman Problem
 
-![](https://media.giphy.com/media/LPkQ56C9z0iSv9Hs9D/giphy.gif)
+![Klip video April 4th 2024 11_57 am](https://github.com/constant17/tsp_algo_visualization/assets/29698810/459052f3-1038-49a7-811a-2808073bdab0)
 
-The traveling salesman problem (TSP) asks the question, "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?".
+
+The traveling salesman problem (TSP) is a very known optimization problem that seeks to solve the following challenge: given a set of cities and a cost to travel from one city to another, identify the route that will allow a salesman to visit each city at the minimum cost and only once, starting and ending in the same city.
 
 ### This project
 
-- Live at [tspvis.com](https://tspvis.com)
-- The goal of this site is to be an **educational** resource to help visualize, learn, and develop different algorithms for the traveling salesman problem in a way that's easily accessible
-- As you apply different algorithms, the current best path is saved and used as input to whatever you run next. The order in which you apply different algorithms to the problem is sometimes referred to the meta-heuristic strategy.
+- Live at 
+
 - For example, apply nearest neighbor, then 2-opt inversion, then branch and bound
 
 ### Heuristic algorithms
