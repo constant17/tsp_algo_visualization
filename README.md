@@ -5,17 +5,37 @@
 
 The traveling salesman problem (TSP) is a very known optimization problem that seeks to solve the following challenge: given a set of cities and a cost to travel from one city to another, identify the route that will allow a salesman to visit each city at the minimum cost and only once, starting and ending in the same city.
 
-### This project
+### Requirements
+- NodeJS -v 16.x.x
+- This project uses `remark-mdx` package, which only works with NodeJS 16.
 
-- Live at 
+###  Local Installation
 
-- For example, apply nearest neighbor, then 2-opt inversion, then branch and bound
+- Fork or download the project
+- Move to the root directory of the project and run `npm install`
+- Run `npm run develop` or `npm start` to launch the project. It should run on port 8000 if it's available so open the browser with `http://localhost:8000/`
 
-### Heuristic algorithms
 
-Heuristic algorithms attempt to find a good approximation of the optimal path within a more _reasonable_ amount of time.
+### [Solutions to the TSP problem](https://optimization.cbe.cornell.edu/index.php?title=Traveling_salesman_problem):
 
-**Construction** - Build a path
+#### Exact algorithms
+The most straightforward algorithmic solution is a complete enumeration of all possible paths to determine the path of least cost. Thus, for `n` cities, the algorithm performs in
+`O(n!)` time, and this method is practical only for extremely small values of `n`.
+Branch-and-bound algorithms are also used to find solutions for the TSP problem. 
+
+Other exact solution methods include the [cutting plane](https://en.wikipedia.org/wiki/Cutting-plane_method) method and [branch-and-cut](https://en.wikipedia.org/wiki/Branch_and_cut).
+
+#### Heuristic algorithms
+The TSP is considered an NP-hard problem so heuristic algorithms are used to give approximate solutions that are good, though not necessarily optimal. The algorithms do not guarantee an optimal solution, but gives near-optimal solutions in reasonable computational time.3 The Held-Karp lower bound can be calculated and used to judge the performance of a heuristic algorithm.3
+
+There are two general [heuristic classifications](http://i.stanford.edu/pub/cstr/reports/cs/tr/85/1066/CS-TR-85-1066.pdf):
+
+* Tour construction procedures where a solution is gradually built by adding a new vertex at each step
+* Tour improvement procedures where a feasbile solution is improved upon by performing various exchanges
+The best methods tend to be composite algorithms that combine these features
+
+### Implemented Algorithms  to Find the Shortest Path
+#### Heuristic algorithms
 
 - Nearest Neighbor
 - Arbitrary Insertion
@@ -29,7 +49,7 @@ Heuristic algorithms attempt to find a good approximation of the optimal path wi
 - 2-Opt Reciprocal Exchange
 - 2-Opt Inversion\*
 
-### Exhaustive algorithms
+#### Exhaustive algorithms
 
 Exhaustive algorithms will always find the best possible solution by evaluating every possible path. These algorithms are typically significantly more expensive then the heuristic algorithms discussed above. The exhaustive algorithms implemented so far include:
 
