@@ -41,13 +41,13 @@ export const MenuHeader = props => {
           component="h1"
           classes={{ root: classes.title }}
         >
-          <FontAwesomeIcon icon={faBriefcase} width="0" /> TSPVIS
+          <FontAwesomeIcon icon={faBriefcase} width="0" /> VISUALIZATION OF TSP
         </Typography>
         <Typography gutterBottom display="inline" color="textSecondary">
           <Tooltip title="Source code">
             <IconButton
               target="_blank"
-              href="https://github.com/jhackshaw/tspvis"
+              href="https://github.com/constant17/tsp_algo_visualization"
             >
               <FontAwesomeIcon icon={faGithub} size="xs" width="0" />
             </IconButton>
@@ -61,7 +61,7 @@ export const MenuHeader = props => {
         </Typography>
       </Grid>
       <Typography variant="subtitle2" color="textSecondary">
-        Visualize algorithms for the traveling salesman problem. Use the
+        Animated visualization of the TSP algorithm execution. Use the
         controls below to plot points, choose an algorithm, and control
         execution.
         <br />
