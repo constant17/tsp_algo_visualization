@@ -46,12 +46,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "start": "npm run develop"
   },
   "bugs": {
     "url": "https://github.com/constant17/tsp_algo_visualization/issues"
