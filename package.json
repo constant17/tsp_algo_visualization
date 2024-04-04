@@ -41,10 +41,17 @@
     "eslint-plugin-react": "^7.23.2",
     "prettier": "^1.19.1"
   },
-  "keywords": [],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "scripts": {
-    "start": "npm run develop"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "bugs": {
     "url": "https://github.com/constant17/tsp_algo_visualization/issues"
