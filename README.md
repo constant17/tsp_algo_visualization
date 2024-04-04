@@ -1,27 +1,41 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e21365cc-96a9-4649-9ad2-a35bb42d4a9f/deploy-status)](https://app.netlify.com/sites/tspvis/deploys)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://tspvis.com)
-[![Contributors](https://img.shields.io/github/contributors/jhackshaw/tspvis)](https://github.com/jhackshaw/tspvis/graphs/contributors)
-![GitHub](https://img.shields.io/github/license/jhackshaw/tspvis)
-
 # Traveling Salesman Problem
 
-![](https://media.giphy.com/media/LPkQ56C9z0iSv9Hs9D/giphy.gif)
+![Klip video April 4th 2024 11_57 am](https://github.com/constant17/tsp_algo_visualization/assets/29698810/459052f3-1038-49a7-811a-2808073bdab0)
 
-The traveling salesman problem (TSP) asks the question, "Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?".
 
-### This project
+The traveling salesman problem (TSP) is a very known optimization problem that seeks to solve the following challenge: given a set of cities and a cost to travel from one city to another, identify the route that will allow a salesman to visit each city at the minimum cost and only once, starting and ending in the same city.
 
-- Live at [tspvis.com](https://tspvis.com)
-- The goal of this site is to be an **educational** resource to help visualize, learn, and develop different algorithms for the traveling salesman problem in a way that's easily accessible
-- As you apply different algorithms, the current best path is saved and used as input to whatever you run next. The order in which you apply different algorithms to the problem is sometimes referred to the meta-heuristic strategy.
-- For example, apply nearest neighbor, then 2-opt inversion, then branch and bound
+### Requirements
+- NodeJS -v 16.x.x
+- This project uses `remark-mdx` package, which only works with NodeJS 16.
 
-### Heuristic algorithms
+###  Local Installation
 
-Heuristic algorithms attempt to find a good approximation of the optimal path within a more _reasonable_ amount of time.
+- Fork or download the project
+- Move to the root directory of the project and run `npm install`
+- Run `npm run develop` or `npm start` to launch the project. It should run on port 8000 if it's available so open the browser with `http://localhost:8000/`
 
-**Construction** - Build a path
+
+### [Solutions to the TSP problem](https://optimization.cbe.cornell.edu/index.php?title=Traveling_salesman_problem):
+
+#### Exact algorithms
+The most straightforward algorithmic solution is a complete enumeration of all possible paths to determine the path of least cost. Thus, for `n` cities, the algorithm performs in
+`O(n!)` time, and this method is practical only for extremely small values of `n`.
+Branch-and-bound algorithms are also used to find solutions for the TSP problem. 
+
+Other exact solution methods include the [cutting plane](https://en.wikipedia.org/wiki/Cutting-plane_method) method and [branch-and-cut](https://en.wikipedia.org/wiki/Branch_and_cut).
+
+#### Heuristic algorithms
+The TSP is considered an NP-hard problem so heuristic algorithms are used to give approximate solutions that are good, though not necessarily optimal. The algorithms do not guarantee an optimal solution, but gives near-optimal solutions in reasonable computational time.3 The Held-Karp lower bound can be calculated and used to judge the performance of a heuristic algorithm.3
+
+There are two general [heuristic classifications](http://i.stanford.edu/pub/cstr/reports/cs/tr/85/1066/CS-TR-85-1066.pdf):
+
+* Tour construction procedures where a solution is gradually built by adding a new vertex at each step
+* Tour improvement procedures where a feasbile solution is improved upon by performing various exchanges
+The best methods tend to be composite algorithms that combine these features
+
+### Implemented Algorithms  to Find the Shortest Path
+#### Heuristic algorithms
 
 - Nearest Neighbor
 - Arbitrary Insertion
@@ -35,7 +49,7 @@ Heuristic algorithms attempt to find a good approximation of the optimal path wi
 - 2-Opt Reciprocal Exchange
 - 2-Opt Inversion\*
 
-### Exhaustive algorithms
+#### Exhaustive algorithms
 
 Exhaustive algorithms will always find the best possible solution by evaluating every possible path. These algorithms are typically significantly more expensive then the heuristic algorithms discussed above. The exhaustive algorithms implemented so far include:
 
