@@ -1,9 +1,10 @@
 # Animated Visualization of the Algorithms Solving the Traveling Salesman Problem
 
+The traveling salesman problem (TSP) is a very well-known optimization problem that seeks to solve the following challenge: given a set of cities and a cost to travel from one city to another, identify the route that will allow a salesman to visit each city at the minimum cost and only once, starting and ending in the same city. 
+Below is a screen recording showing an animated visualization of [Convex Hull algorithm](https://en.wikipedia.org/wiki/Convex_hull_algorithms) solving the TSP problem.
+
 ![Klip video April 4th 2024 11_57 am](https://github.com/constant17/tsp_algo_visualization/assets/29698810/459052f3-1038-49a7-811a-2808073bdab0)
 
-
-The traveling salesman problem (TSP) is a very known optimization problem that seeks to solve the following challenge: given a set of cities and a cost to travel from one city to another, identify the route that will allow a salesman to visit each city at the minimum cost and only once, starting and ending in the same city.
 
 ## Requirements
 - NodeJS -v 16.x.x
