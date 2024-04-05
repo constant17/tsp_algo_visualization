@@ -1,22 +1,22 @@
-# Traveling Salesman Problem
+# Animated Visualization of the Traveling Salesman Problem
 
 ![Klip video April 4th 2024 11_57 am](https://github.com/constant17/tsp_algo_visualization/assets/29698810/459052f3-1038-49a7-811a-2808073bdab0)
 
 
 The traveling salesman problem (TSP) is a very known optimization problem that seeks to solve the following challenge: given a set of cities and a cost to travel from one city to another, identify the route that will allow a salesman to visit each city at the minimum cost and only once, starting and ending in the same city.
 
-### Requirements
+## Requirements
 - NodeJS -v 16.x.x
 - This project uses `remark-mdx` package, which only works with NodeJS 16.
 
-###  Local Installation
+##  Local Installation
 
 - Fork or download the project
 - Move to the root directory of the project and run `npm install`
 - Run `npm run develop` or `npm start` to launch the project. It should run on port 8000 if it's available so open the browser with `http://localhost:8000/`
 
 
-### [Solutions to the TSP problem](https://optimization.cbe.cornell.edu/index.php?title=Traveling_salesman_problem):
+## [Solutions to the TSP problem](https://optimization.cbe.cornell.edu/index.php?title=Traveling_salesman_problem)
 
 #### Exact algorithms
 The most straightforward algorithmic solution is a complete enumeration of all possible paths to determine the path of least cost. Thus, for `n` cities, the algorithm performs in
@@ -28,13 +28,13 @@ Other exact solution methods include the [cutting plane](https://en.wikipedia.or
 #### Heuristic algorithms
 The TSP is considered an NP-hard problem so heuristic algorithms are used to give approximate solutions that are good, though not necessarily optimal. The algorithms do not guarantee an optimal solution, but gives near-optimal solutions in reasonable computational time.3 The Held-Karp lower bound can be calculated and used to judge the performance of a heuristic algorithm.3
 
-There are two general [heuristic classifications](http://i.stanford.edu/pub/cstr/reports/cs/tr/85/1066/CS-TR-85-1066.pdf):
+There are two general [heuristic classifications](http://i.stanford.edu/pub/cstr/reports/cs/tr/85/1066/CS-TR-85-1066.pdf)
 
 * Tour construction procedures where a solution is gradually built by adding a new vertex at each step
 * Tour improvement procedures where a feasbile solution is improved upon by performing various exchanges
 The best methods tend to be composite algorithms that combine these features
 
-### Implemented Algorithms  to Find the Shortest Path
+## Implemented Algorithms  to Find the Shortest Path
 #### Heuristic algorithms
 
 - Nearest Neighbor
