@@ -1,4 +1,4 @@
-# Animated Visualization of the Traveling Salesman Problem
+# Animated Visualization of the Algorithms Solving the Traveling Salesman Problem
 
 ![Klip video April 4th 2024 11_57 am](https://github.com/constant17/tsp_algo_visualization/assets/29698810/459052f3-1038-49a7-811a-2808073bdab0)
 
