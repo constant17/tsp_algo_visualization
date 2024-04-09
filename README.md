@@ -6,6 +6,8 @@ Below is a screen recording of the application showing an animated visualization
 ![Klip video April 4th 2024 11_57 am](https://github.com/constant17/tsp_algo_visualization/assets/29698810/459052f3-1038-49a7-811a-2808073bdab0)
 
 
+The project is live at: https://visualize-tsp-algo.vercel.app/
+
 ## Requirements
 - NodeJS -v 16.x.x
 - This project uses `remark-mdx` package, which only works with NodeJS 16.
