@@ -32,7 +32,8 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
-    "typeface-roboto": "0.0.75"
+    "typeface-roboto": "0.0.75",
+    "worker-loader": "^3.0.8"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
@@ -55,10 +56,13 @@
     "url": "https://github.com/constant17/tsp_algo_visualization/issues"
   },
   "engines": {
-    "node": "16.16.0"
+    "node": ">=16.16.0 <17.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/constant17/tsp_algo_visualization"
-  }
+    "url": "git+https://github.com/constant17/tsp_algo_visualization.git"
+  },
+  "homepage": "https://github.com/constant17/tsp_algo_visualization#readme",
+  "main": ".eslintrc.js",
+  "author": "Constant Pagoui"
 }

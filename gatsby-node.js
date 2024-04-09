@@ -9,7 +9,7 @@ exports.onCreateWebpackConfig = ({
     use: {
       loader: "worker-loader",
       options: {
-        inline: true
+        inline: "no-fallback"
       }
     }
   });
